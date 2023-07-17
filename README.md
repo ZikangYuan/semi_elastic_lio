@@ -17,8 +17,13 @@ The comparison result between our estimated trajectoriy and ground truth on sequ
 <img src="doc/demo_gif.gif" width=34.85% />
 </div>
 
+**Pipeline:**
+<div align="center">
+<img src="doc/framework.png" width=90% />
+</div>
+
 **New Features:**
 
 <div align="left">
-<img src="doc/velocity_consistency.png" width=49% />
+<img src="doc/method.png" width=40% />
 </div>
