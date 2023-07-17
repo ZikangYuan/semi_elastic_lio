@@ -152,3 +152,39 @@ Then open the terminal in the path of the bag file, and type:
 ```bash
 rosbag play SEQUENCE_NAME.bag --clock -d 1.0
 ```
+
+### 4. Run on [*KAIST*](https://sites.google.com/view/complex-urban-dataset)
+
+For point clouds, we utilize the data from both two 3D LiDARs of *KAIST*. Users can package the rosbag according to the tool [kaist2bag](https://github.com/ZikangYuan/kaist2bag). The partial test sequences of *KAIST* used by us can also be downloaded from [Google drive](https://drive.google.com/drive/folders/1upQuR9cWoawM6MuPYxSpPQPlRLK7sDWU). 
+
+Chinese users can download the test sequences of *KAIST* form [baidu yun](https://pan.baidu.com/s/1vrat2HdTf6NBrjw_kGCZNw), while the password is **s4bw**.
+
+Please go to the workspace of **Semi-Elastic-LIO** and type:
+
+```bash
+source devel/setup.bash
+roslaunch semi_elastic_lio lio_kaist.launch
+```
+
+Then open the terminal in the path of the bag file, and type:
+
+```bash
+rosbag play SEQUENCE_NAME.bag --clock -d 1.0
+```
+
+## Citation
+
+If you use our work in your research project, please consider citing:
+
+```
+@article{XXX,
+  title={Semi-Elastic LiDAR-Inertial Odometry},
+  author={Yuan, Zikang and Lang, Fengtian, Xu, Tianle, Zhao, Chengwei and Yang, Xin},
+  journal={arXiv preprint arXiv:XXX},
+  year={2023}
+}
+```
+
+## Acknowledgments
+
+Thanks for [CT-ICP](https://github.com/jedeschaud/ct_icp), [Fast-LIO](https://github.com/hku-mars/FAST_LIO), [VINs-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) and [Open-VINs](https://github.com/vell001/open_vins).
