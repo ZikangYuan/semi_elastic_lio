@@ -55,7 +55,7 @@ The proposed **Semi-Elastic LiDAR-Inertial State Estimation** method utilizes th
 
 ```bash
 mkdir -p ~/Semi-Elastic-LIO/src
-cd Semi-Elastic/src
+cd Semi-Elastic-LIO/src
 ```
 
 ### 3. Clone the directory and build
@@ -64,4 +64,40 @@ cd Semi-Elastic/src
 git clone https://github.com/ZikangYuan/semi_elastic_lio.git
 cd ..
 catkin_make
+```
+
+## Run on Public Datasets
+
+Noted:
+
+A. Except fot the external parameters between IMU and LiDAR, and the value of gravitational acceleration, **the parameter configurations used in different datasets are exactly the same** to demonstrate the stability and robustness of **SR-LIO**.
+
+B. Please make sure the LiDAR point clouds have the "ring" channel information.
+
+C. The warning message "Failed to find match for field 'time'." doesn't matter. It can be ignored.
+
+D. **Please create a folder named "output" before running.** When **SR-LIO** is running, the estimated pose is recorded in real time in the **pose.txt** located in the **output folder**.
+
+E. As the groundtruth acquisition of some datasets (*UTBM* and *ULHK*) are extremely complicated, in order to facilitate evaluation, **we store the pose ground truth of the four datasets used by us as [TUM](https://vision.in.tum.de/data/datasets/rgbd-dataset) format. Please down load from [Google drive](https://drive.google.com/drive/folders/1WnvzUzP_s70p4myPf5fsP1Jtr_62PnL1)**.
+
+###  1. Run on [*NCLT*](http://robots.engin.umich.edu/nclt/)
+
+The time for finishing a sweep by the LiDAR of *NCLT* is not 100ms, but 130~140ms (around 7.5 Hz). Therefore, we need to package the data stream of the *NCLT* dataset as 7.5 Hz sweep packages. The **nclt_to_rosbag.py** in the **"tools"** folder can be used to package 7.5 Hz sweeps and linearly interpolated 100 Hz IMU data into a rosbag file:
+
+```bash
+python3 nclt_to_rosbag.py PATH_OF_NVLT_SEQUENCE_FOLDER PATH_OF_OUTPUT_BAG
+```
+
+Then, please go to the workspace of **Semi-Elastic-LIO** and type:
+
+```bash
+cd Semi-Elastic-LIO
+source devel/setup.bash
+roslaunch semi_elastic_lio lio_nclt.launch
+```
+
+Then open the terminal in the path of the bag file, and type:
+
+```bash
+rosbag play SEQUENCE_NAME.bag --clock -d 1.0
 ```
