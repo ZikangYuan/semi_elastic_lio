@@ -10,11 +10,11 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 
 ## Demo Video (2023-07-17 Update)
 
-The **x40 Real-Time Performance** on sequence captured by a 16-line Robosense LiDAR and a IMU coming with [*StarNeto*](http://www.starneto.com/) RTK. On our currently hardware platform (**Intel Core i7-12700 and 32 GB RAM**), and the **Semi-Elastic-LIO** need **60~70ms** to handle a sweep under this environment.
+The comparison result between our estimated trajectoriy and ground truth on sequence *nclt_2012-04-29* (left), the local point cloud map of *nclt_2012-04-29* (center), and the **x40 Real-Time Performance** on sequence captured by a 16-line Robosense LiDAR and a IMU coming with [*StarNeto*](http://www.starneto.com/) RTK (right). On our currently hardware platform (**Intel Core i7-12700 and 32 GB RAM**), and the **Semi-Elastic-LIO** need **60~70ms** to handle a sweep under this environment.
 
 <div align="left">
 <img src="doc/nclt_result.png" width=56.6% />
-<img src="doc/demo_gif.gif" width=35.3% />
+<img src="doc/demo_gif.gif" width=34.85% />
 </div>
 
 **New Features:**
