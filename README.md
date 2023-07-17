@@ -22,6 +22,7 @@ The comparison result between our estimated trajectoriy and ground truth on sequ
 <img src="doc/framework.png" width=90% />
 </div>
 
+
 **New Features:**
 
 <div align="left">
