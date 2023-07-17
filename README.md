@@ -14,7 +14,7 @@ The **x40 Real-Time Performance** on sequence captured by a 16-line Robosense Li
 
 <div align="left">
 <img src="doc/demo_gif.gif" width=33.3% />
-<img src="doc/nclt_result.png" width=66.6% />
+<img src="doc/nclt_result.png" width=56.6% />
 </div>
 
 **New Features:**
