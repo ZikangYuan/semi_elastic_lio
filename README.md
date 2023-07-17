@@ -27,3 +27,41 @@ The proposed **Semi-Elastic LiDAR-Inertial State Estimation** method utilizes th
 <div align="center">
 <img src="doc/method_comparison.png" width=90% />
 </div>
+
+## Installation
+
+### 1. Requirements
+
+> GCC >= 5.4.0
+>
+> Cmake >= 3.0.2
+> 
+> [Eigen3](http://eigen.tuxfamily.org/index.php?title=Main_Page) >= 3.2.8
+>
+> [PCL](https://pointclouds.org/downloads/) == 1.7 for Ubuntu 16.04, and == 1.8 for Ubuntu 18.04
+>
+> [Ceres](http://ceres-solver.org/installation.html) >= 1.14
+>
+> [ROS](http://wiki.ros.org/ROS/Installation)
+
+##### Have Tested On:
+
+| OS    | GCC  | Cmake | Eigen3 | PCL | Ceres |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| Ubuntu 16.04 | 5.4.0  | 3.16.0 | 3.2.8 | 1.7 | 1.14 |
+| Ubuntu 18.04 | 7.5.0  | 3.11.2 | 3.3.4 | 1.8 | 1.14 |
+
+### 2. Create ROS workspace
+
+```bash
+mkdir -p ~/Semi-Elastic-LIO/src
+cd Semi-Elastic/src
+```
+
+### 3. Clone the directory and build
+
+```bash
+git clone https://github.com/ZikangYuan/semi_elastic_lio.git
+cd ..
+catkin_make
+```
