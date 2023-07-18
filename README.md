@@ -4,7 +4,7 @@
 
 ## Related Work
 
-Semi-Elastic LiDAR-Inertial Odometry
+[Semi-Elastic LiDAR-Inertial Odometry](https://arxiv.org/abs/2307.07792)
 
 Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxdM9gAAAAJ), [*Fengtian Lang*](https://scholar.google.com/citations?hl=zh-CN&user=zwgGSkEAAAAJ&view_op=list_works&gmla=ABEO0Yrl4-YPuowyntSYyCW760yxM5-IWkF8FGV4t9bs9qz1oWrqnlHmPdbt7LMcMDc04kl2puqRR4FaZvaCUONsX7MQhuAC6a--VS2pTsuwj-CyKgWp3iWDP2TS0I__Zui5da4), *Tianle Xu*, [*Chengwei Zhao*](https://github.com/chengwei0427) and [*Xin Yang*](https://scholar.google.com/citations?user=lsz8OOYAAAAJ&hl=zh-CN)
 
@@ -177,10 +177,10 @@ rosbag play SEQUENCE_NAME.bag --clock -d 1.0
 If you use our work in your research project, please consider citing:
 
 ```
-@article{XXX,
+@article{yuan2023semi,
   title={Semi-Elastic LiDAR-Inertial Odometry},
   author={Yuan, Zikang and Lang, Fengtian, Xu, Tianle, Zhao, Chengwei and Yang, Xin},
-  journal={arXiv preprint arXiv:XXX},
+  journal={arXiv preprint arXiv:2307.07792},
   year={2023}
 }
 ```
