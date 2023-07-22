@@ -23,7 +23,7 @@ The comparison result between our estimated trajectoriy and ground truth on sequ
 </div>
 
 **New Features:**
-The proposed **Semi-Elastic LiDAR-Inertial State Estimation** method utilizes the point-to-plane constraint to ensure the state at the end of current sweep, and utilizes the logical constraint to ensure the state at the beginning of current sweep. The IMU pre-integration constraints both begin state and end state to make them satisfy kinematic constraints within elastic range. The comparision between our method with the **traditional LiDAR-Inertial State Estimation** and the **Elastic LiDAR-Inertial State Estimation** is illustrated by the figure as follow:
+The proposed **Semi-Elastic LiDAR-Inertial State Estimation** method utilizes the point-to-plane constraint to ensure the state at the end of current sweep, and utilizes the logical constraint to ensure the state at the beginning of current sweep. The IMU pre-integration constraints both begin state and end state to make them satisfy kinematic constraints within elastic range. The comparison between our method with the **traditional LiDAR-Inertial State Estimation** and the **Elastic LiDAR-Inertial State Estimation** is illustrated by the figure as follow:
 <div align="center">
 <img src="doc/method_comparison.png" width=90% />
 </div>
