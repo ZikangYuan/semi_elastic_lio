@@ -187,4 +187,4 @@ If you use our work in your research project, please consider citing:
 
 ## Acknowledgments
 
-Thanks for [CT-ICP](https://github.com/jedeschaud/ct_icp), [Fast-LIO](https://github.com/hku-mars/FAST_LIO), [VINs-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono),  [Open-VINs](https://github.com/vell001/open_vins) and [CT-LIO](https://github.com/chengwei0427/ct-lio).
+Thanks for [CT-ICP](https://github.com/jedeschaud/ct_icp), [Fast-LIO](https://github.com/hku-mars/FAST_LIO), [VINs-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono),  [Open-VINs](https://github.com/rpng/open_vins) and [CT-LIO](https://github.com/chengwei0427/ct-lio).
